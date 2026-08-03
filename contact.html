@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ResumeIQ</title>
+
+    <link rel="stylesheet" href="contact.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+<nav class="navbar">
+
+    <div class="logo">ResumeIQ</div>
+
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+
+</nav>
+
+
+
+<section class="contact">
+
+    <h1>Contact Us</h1>
+
+    <p>
+        We'd love to hear from you. Whether you have questions,
+        suggestions, or feedback, feel free to reach out.
+    </p>
+
+</section>
+
+
+
+<section class="contact-info">
+
+    <div class="info-card">
+        <h3>📍 Location</h3>
+        <p>Bengaluru, Karnataka, India</p>
+    </div>
+
+    <div class="info-card">
+        <h3>📧 Email</h3>
+        <p>support@resumeiq.com</p>
+    </div>
+
+    <div class="info-card">
+        <h3>📞 Phone</h3>
+        <p>+91 98765 43210</p>
+    </div>
+
+</section>
+
+
+
+<section class="form-section">
+
+    <h2>Send Us a Message</h2>
+
+    <form onsubmit="sendMessage(event)">
+
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <input type="tel" placeholder="Phone Number" required>
+
+        <input type="text" placeholder="Subject" required>
+
+        <textarea placeholder="Write your message..." rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+
+
+<footer>
+
+    <h3>ResumeIQ</h3>
+
+    <p>Analyze. Improve. Succeed.</p>
+
+    <p>© 2026 ResumeIQ. All Rights Reserved.</p>
+
+</footer>
+
+<script src="contact.js"></script>
+<script>
+function sendMessage(event) {
+    event.preventDefault();
+
+    alert("✅ Message sent successfully!");
+
+    event.target.reset();
+}
+</script>
+
+</body>
+</html>

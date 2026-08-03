@@ -1,0 +1,436 @@
+/*================ GOOGLE FONT & RESET ================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+section{
+    padding:90px 8%;
+}
+
+/*================ NAVBAR ================*/
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#151f36;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#fff;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    color:#fff;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#93c5fd;
+}
+
+.login-btn{
+    background:#3b82f6;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.login-btn:hover{
+    background:#2563eb;
+}
+
+/*================ HERO ================*/
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:19px;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#3b82f6;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#2563eb;
+}
+
+/*================ KEY FEATURES ================*/
+
+.features{
+    padding:90px 8%;
+}
+
+.features h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.feature-card{
+    background:#1e293b;
+    padding:35px 25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 18px rgba(59,130,246,.45);
+}
+
+.feature-card h3{
+    color:#93c5fd;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.feature-card p{
+    color:#d1d5db;
+    line-height:1.7;
+}
+
+/*================ WHY CHOOSE RESUMEIQ ================*/
+
+.why-choose{
+    padding:90px 8%;
+}
+
+.features-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.features-left,
+.features-right{
+    flex:1;
+}
+
+.features-left h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.feature-intro{
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.feature-list{
+    list-style:none;
+}
+
+.feature-list li{
+    background:#1e293b;
+    padding:18px 20px;
+    margin-bottom:18px;
+    border-radius:12px;
+    border-left:5px solid #3b82f6;
+    transition:.3s;
+}
+
+.feature-list li:hover{
+    transform:translateX(8px);
+    box-shadow:0 0 15px rgba(59,130,246,.4);
+}
+
+/*================ HOW IT WORKS ================*/
+
+.steps{
+    padding:90px 8%;
+}
+
+.steps h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.step-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.step{
+    background:#1e293b;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.step:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 18px rgba(59,130,246,.45);
+}
+
+.step h3{
+    color:#93c5fd;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.step p{
+    color:#d1d5db;
+    line-height:1.7;
+}
+
+
+/*================ CALL TO ACTION ================*/
+
+.cta{
+    text-align:center;
+    padding:100px 8%;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:#cbd5e1;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.cta-btn{
+    display:inline-block;
+    background:#3b82f6;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.cta-btn:hover{
+    background:#2563eb;
+}
+
+
+/*================ FOOTER ================*/
+
+footer{
+    background:#151f36;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+
+/*================ RESPONSIVE ================*/
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .feature-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .step-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .features-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .features-left h2{
+        text-align:center;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:18px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:26px;
+    }
+
+    .hero{
+        min-height:75vh;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-btn,
+    .cta-btn{
+        padding:12px 28px;
+    }
+
+    .features h2,
+    .steps h2,
+    .features-left h2,
+    .cta h2{
+        font-size:34px;
+    }
+
+    .feature-container,
+    .step-container{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:60px 25px;
+    }
+
+    .feature-card,
+    .step{
+        padding:30px 20px;
+    }
+
+    .feature-list li{
+        padding:16px;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+    .logo{
+        font-size:24px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .features h2,
+    .steps h2,
+    .features-left h2,
+    .cta h2{
+        font-size:28px;
+    }
+
+    .feature-card h3,
+    .step h3{
+        font-size:20px;
+    }
+
+    .feature-card,
+    .step{
+        padding:25px 18px;
+    }
+
+    .feature-list li{
+        font-size:15px;
+    }
+
+    footer h3{
+        font-size:24px;
+    }
+
+    footer p{
+        font-size:14px;
+    }
+
+}

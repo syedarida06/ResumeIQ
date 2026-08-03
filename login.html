@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ResumeIQ</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">ResumeIQ</div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+
+    </nav>
+
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h2>Welcome Back</h2>
+            <p>Login to continue building your career.</p>
+
+            <!-- Login Form -->
+            <form onsubmit="loginUser(event)">
+
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required>
+                </div>
+
+                <div class="options">
+
+                    <label>
+                        <input type="checkbox">
+                        Remember Me
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <button type="button" class="google-btn" onclick="googleLogin()">
+            Continue with Google
+            </button>
+
+            <p class="signup-text">
+                Don't have an account?
+                <a href="signup.html">Create Account</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+    <h3>ResumeIQ</h3>
+
+    <p>
+
+        Helping students build stronger resumes through
+        intelligent resume analysis.
+
+    </p>
+
+    <p>
+
+        © 2026 ResumeIQ. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+
+    <!-- JavaScript -->
+    <script src="login.js"></script>
+
+</body>
+</html>

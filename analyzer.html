@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <nav class="navbar">Resume Analyzer</nav>
+    <div class="container">
+        <div class="box upload">
+            <h3>Upload Resume</h3>
+            
+            <input id="resumeFile" type="file">
+            <button id="analyzeBtn">Analyze</button>
+            <button id="clearBtn">Clear Data</button>
+        </div>  
+        <div class="box skills">
+            <h3>Skills</h3>
+            <ul id="skillslist"></ul>
+        </div>
+        <div class="box missing">
+            <h3>Missing Skills</h3>
+            <ul id="missinglist"></ul>
+            
+            
+        </div>
+        <div class="box insights">
+            <h3>Resume Insights</h3>
+            <ul id="insightsList"></ul>
+        
+        </div>
+        <div id="matchScore" class="box">
+            <h3>Profile Match</h3>
+            <div id="matchValue"></div>
+            <div class="progressBar">
+                <div id="progressDisplay"></div>
+            </div>
+        </div>
+        <div class="box chart">
+            <h3>Analysis</h3>
+            <canvas id="skillChart"></canvas>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
